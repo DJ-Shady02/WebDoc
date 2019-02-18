@@ -64,21 +64,19 @@ header #niels {
 
 .parallax {
    height: 300px;
-   background-color: aquamarine;
    position: relative;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: top center;
    background-attachment: fixed;
    overflow: hidden;
-}
-
-#album {
-   background-color: none;
-   background-image: url(../image/debut_album_bg.jpg);
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+#album {
+   background-image: url(../images/debut_album_bg.jpg);
    color: #382d35;
 }
 
