@@ -1,114 +1,60 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-@font-face {
-   font-family: cenScBk;
-   src: url(CENSCBK.TTF);
-   font-weight: 400;
-}
-
-@font-face {
-   font-family: NiaSol;
-   src: url(NIAGSOL.TTF);
-   font-weight: 400;
-}
-
+body,
 html {
-   font-size: 16px;
-   font-family: 'cenScBk', serif;
+    height: 100%;
+    margin: 0;
 }
 
-body {
-   width: 100%;
+.bg {
+
+    background-image: url("/images/albumbaggrund.png");
+
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h1, h2, h3, h4, h5, h6, h7, h8, h9 {
-   font-family: 'NiaSol', serif;
-   width: 100%;
-   font-weight: 100;
-   transform: scale(1.25, 1);
-   width: 80% /* Countering the scale of 125% */
+#firkantholder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+
 }
 
-h1 {
-   text-align: center;
-   margin: 0 auto;
-   font-size: 8rem;
-   color: cornsilk;
+.firkanter {
+    
+    width: 150px;
+    height: 200px;
+    background-color: black;
+    margin: 4% 6% 4% 6%;
+
+    background: rgba(82, 55, 74, 0.7);
+    
+    
+    box-shadow: 0px 0px 20px;
 }
 
-header, .between, .parallax {
-   width: 100%;
+.tekst {
+    transform: rotate(270deg);
+    margin: 100% 75% 0 0;
+    color: white;
+    font-size: 150%;
+    font-family: 
+}
+.tekst2 {
+    transform: rotate(270deg);
+    margin: 85% 59% 0 0;
+    color: white;
+    font-size: 150%;
 }
 
-header {
-   height: 100vh;
-   background-color: black;
-}
+#sang1
 
-header #niels {
-   position: relative;
-   top: -100px;
-   left: 100px;
-   height: 100vh;
-}
 
-.between {
-   height: 600px;
-   background-color: indianred;
-   position: relative;
-}
-
-.parallax {
-   height: 300px;
-   position: relative;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: top center;
-   background-attachment: fixed;
-   overflow: hidden;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-#album {
-   background-image: url(../images/debut_album_bg.jpg);
-   color: #382d35;
-}
-
-#album .textBox {
-   width: 270px;
-   display: block;
-}
-
-#album .firstChild {
-   text-align: center;
-   margin-right: 3rem;
-}
-
-#album .lastChild {
-   margin-left: 3rem;
-}
-
-#album .firstChild h2 {
-   font-size: 4rem;
-   letter-spacing: 5px;
-   line-height: 0.8;
-}
-
-#album .firstChild p {
-   font-size: 0.8rem;
-   font-weight: bold;
-}
-
-#albumLogo {
-   height: 25px;
-}
-
-#album #albumFace {
-   height: 275px;
-}
