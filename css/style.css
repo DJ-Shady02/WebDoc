@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
    margin: 0;
    padding: 0;
@@ -20,12 +19,21 @@ body {
    width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, h7, h8, h9 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8,
+h9 {
    font-family: 'NiaSol', serif;
    width: 100%;
    font-weight: 100;
    transform: scale(1.25, 1);
-   width: 80% /* Countering the scale of 125% */
+   width: 80%
+      /* Countering the scale of 125% */
 }
 
 h1 {
@@ -35,7 +43,9 @@ h1 {
    color: cornsilk;
 }
 
-header, .between, .parallax {
+header,
+.between,
+.parallax {
    width: 100%;
 }
 
@@ -46,9 +56,11 @@ header {
 
 header #nielsOgGuitar {
    position: relative;
-   top: -137px; /* relative + minus header height to "reset" to top */
+   top: -137px;
+   /* relative + minus header height to "reset" to top */
    height: calc(100vh - 5rem);
-   margin-top: 5rem; /* Calculate height + minus margin top and add margin top equal to calculated */
+   margin-top: 5rem;
+   /* Calculate height + minus margin top and add margin top equal to calculated */
    left: 50%;
    transform: translateX(-50%);
 }
@@ -77,7 +89,8 @@ p {
 }
 
 .lastp {
-   margin-bottom: 0; /* If last paragraph, no margin bottom */
+   margin-bottom: 0;
+   /* If last paragraph, no margin bottom */
 }
 
 .textBox {
@@ -145,65 +158,38 @@ p {
 #album #albumFace {
    height: 275px;
 }
-=======
-* {
-    box-sizing: border-box;
-}
-
-body,
-html {
-    height: 100%;
-    margin: 0;
-}
 
 .bg {
-
-    background-image: url("/images/albumbaggrund.png");
-
-    height: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-image: url("../images/albumbaggrund.png");
+   height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 #firkantholder {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
 
 }
 
 .firkanter {
-    
-    width: 150px;
-    height: 200px;
-    background-color: black;
-    margin: 4% 6% 4% 6%;
-
-    background: rgba(82, 55, 74, 0.7);
-    
-    
-    box-shadow: 0px 0px 20px;
+   width: 150px;
+   height: 200px;
+   background-color: black;
+   margin: 4% 6% 4% 6%;
+   background: rgba(82, 55, 74, 0.7);
+   box-shadow: 0px 0px 20px;
 }
 
 .tekst {
-    transform: rotate(270deg);
-    margin: 100% 75% 0 0;
-    color: white;
-    font-size: 150%;
-    font-family: 
+   transform: rotate(270deg);
+   margin: 0;
+   position: relative;
+   top: 7rem;
+   right: 2.5rem;
+   font-size: 2rem;
+   color: white;
 }
-.tekst2 {
-    transform: rotate(270deg);
-    margin: 85% 59% 0 0;
-    color: white;
-    font-size: 150%;
-}
-
-#sang1
-
-
->>>>>>> d55f6e4ef3b1048ee7ca9fa3dca0e090ef5583a1
