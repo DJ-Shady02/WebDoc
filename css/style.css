@@ -139,6 +139,19 @@ p {
    margin-left: 3rem;
 }
 
+#albumlink {
+   border: 5px solid rgb(82, 55, 74);
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   display: block;
+   text-align: center;
+   color: rgb(82, 55, 74);
+   text-decoration: none;
+   font-size: 1.75rem;
+   
+}
+
 #album .firstChild h2 {
    font-size: 4rem;
    letter-spacing: 5px;
@@ -167,12 +180,20 @@ p {
    background-size: cover;
 }
 
+.bg a {
+   color: rgb(82, 55, 74);
+   text-decoration: none;
+   font-size: 1.75rem;
+   position: relative;
+   top: 1rem;
+   left: 1rem;
+}
+
 #firkantholder {
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
    justify-content: center;
-
 }
 
 .firkanter {
@@ -182,6 +203,7 @@ p {
    margin: 4% 6% 4% 6%;
    background: rgba(82, 55, 74, 0.7);
    box-shadow: 0px 0px 20px;
+   cursor: pointer;
 }
 
 .tekst {
@@ -192,4 +214,10 @@ p {
    right: 2.5rem;
    font-size: 2rem;
    color: white;
+}
+
+.playpause {
+   color: white;
+   font-size: 2rem;
+   margin-left: 0.25rem;
 }
