@@ -5,12 +5,6 @@
 }
 
 @font-face {
-   font-family: cenScBk;
-   src: url(CENSCBK.TTF);
-   font-weight: 400;
-}
-
-@font-face {
    font-family: NiaSol;
    src: url(NIAGSOL.TTF);
    font-weight: 400;
@@ -18,7 +12,7 @@
 
 html {
    font-size: 16px;
-   font-family: 'cenScBk', serif;
+   font-family: 'IBM Plex Serif', serif;
 }
 
 body {
@@ -46,14 +40,16 @@ header, .between, .parallax {
 
 header {
    height: 100vh;
-   background-color: black;
+   background-color: rgb(5, 5, 5);
 }
 
-header #niels {
+header #nielsOgGuitar {
    position: relative;
-   top: -100px;
-   left: 100px;
-   height: 100vh;
+   top: -137px; /* relative + minus header height to "reset" to top */
+   height: calc(100vh - 5rem);
+   margin-top: 5rem; /* Calculate height + minus margin top and add margin top equal to calculated */
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 .between {
@@ -75,14 +71,49 @@ header #niels {
    align-items: center;
 }
 
+p {
+   margin-bottom: 1rem;
+}
+
+.lastp {
+   margin-bottom: 0; /* If last paragraph, no margin bottom */
+}
+
+.textBox {
+   width: 300px;
+   display: block;
+}
+
+.textBox.large {
+   width: 500px;
+}
+
+#om {
+   background-color: rgb(40, 40, 40);
+   color: rgb(250, 250, 250);
+}
+
+#om img {
+   height: 276px;
+   margin-top: 1.5rem;
+}
+
+#musikken {
+   background-image: url(../images/musikken_bg.jpg);
+   background-size: cover;
+   color: rgb(250, 250, 250);
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+#musikken .textBox {
+   margin-right: 5rem;
+}
+
 #album {
    background-image: url(../images/debut_album_bg.jpg);
    color: #382d35;
-}
-
-#album .textBox {
-   width: 270px;
-   display: block;
 }
 
 #album .firstChild {
@@ -98,6 +129,7 @@ header #niels {
    font-size: 4rem;
    letter-spacing: 5px;
    line-height: 0.8;
+   margin: 0 auto;
 }
 
 #album .firstChild p {
